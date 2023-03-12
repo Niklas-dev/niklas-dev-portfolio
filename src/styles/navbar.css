@@ -1,0 +1,63 @@
+.shownavbar {
+  animation: slide-up forwards 200ms ease-in-out;
+}
+
+.hidenavbar {
+  animation: slide-down forwards 200ms ease-in-out;
+}
+
+@keyframes slide-up {
+  0% {
+    bottom: -5rem;
+  }
+  55% {
+    bottom: 0.3rem;
+    display: block;
+  }
+  60% {
+    bottom: 1rem;
+    display: block;
+  }
+  65% {
+    bottom: 0.4rem;
+    display: block;
+  }
+  70% {
+    bottom: 1rem;
+    display: block;
+  }
+  75% {
+    bottom: 0.5rem;
+    display: block;
+  }
+  80% {
+    bottom: 1rem;
+    display: block;
+  }
+  85% {
+    bottom: 0.6rem;
+    display: block;
+  }
+  90% {
+    bottom: 1rem;
+    display: block;
+  }
+  95% {
+    bottom: 0.8rem;
+    display: block;
+  }
+  100% {
+    bottom: 1rem;
+    display: block;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    bottom: 1rem;
+  }
+  100% {
+    bottom: -4.5rem;
+    display: hidden;
+  }
+}

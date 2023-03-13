@@ -21,6 +21,10 @@ module.exports = {
         txtcolor: "#EEEEEE",
         sectxtcolor: "#CACACA",
       },
+      screens: {
+        llg: "1100px",
+        "3xl": "2000px",
+      },
     },
   },
   plugins: [],

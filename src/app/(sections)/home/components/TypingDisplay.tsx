@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import { Zilla_Slab } from "@next/font/google";
+import { Zilla_Slab } from "next/font/google";
 
 const zilla = Zilla_Slab({ subsets: ["latin"], weight: "700" });
 export default function TypingDisplay() {
@@ -29,11 +29,11 @@ export default function TypingDisplay() {
     };
   }, []);
   return (
-    <h1 className="flex items-center justify-center box-border sm:block sm:items-start sm:justify-start">
+    <h1 className="flex items-center justify-center box-border sm:block sm:items-start sm:justify-start pt-2 sm:pt-0 ">
       <span
         ref={el}
         style={{}}
-        className={`${zilla.className} font-dev  typed-cursor text-[2rem] sm:text-[3.4rem] md:text-[3.5rem] lg:text-[4.8rem] xl:text-[7rem]  second-text`}
+        className={`${zilla.className} font-dev typed-cursor text-[2.1rem] sm:text-[3.4rem] md:text-[3.5rem] lg:text-[4.8rem] xl:text-[6.2rem] 3xl:text-[7.2rem]  second-text`}
       ></span>
     </h1>
   );

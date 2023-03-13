@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import "@/styles/navbar.css";
-import { Zilla_Slab } from "@next/font/google";
+import { Zilla_Slab } from "next/font/google";
 
 const zilla = Zilla_Slab({ weight: "700", subsets: ["latin"] });
 
@@ -50,31 +50,31 @@ export default function NavBar() {
     <div className="flex justify-center">
       <nav ref={navNarRef} className="bg-primary z-10 fixed rounded-md ">
         <ul className="flex flex-row gap-4 md:gap-8 text-base md:text-xl py-4 px-4 md:px-6 text-txtcolor">
-          <li
+          <button
             className={`${zilla.className} scale-100 hover:scale-95 hover:cursor-pointer  transition-transform hover:duration-200`}
           >
             Home
-          </li>
-          <li
+          </button>
+          <button
             className={`${zilla.className} scale-100 hover:scale-95 hover:cursor-pointer  transition-transform hover:duration-200`}
           >
             About
-          </li>
-          <li
+          </button>
+          <button
             className={`${zilla.className} scale-100 hover:scale-95 hover:cursor-pointer transition-transform hover:duration-200`}
           >
             Skills
-          </li>
-          <li
+          </button>
+          <button
             className={`${zilla.className} scale-100 hover:scale-95 hover:cursor-pointer transition-transform hover:duration-200`}
           >
             Projects
-          </li>
-          <li
+          </button>
+          <button
             className={`${zilla.className} scale-100 hover:scale-95 hover:cursor-pointer transition-transform hover:duration-200`}
           >
             Contact
-          </li>
+          </button>
         </ul>
       </nav>
     </div>

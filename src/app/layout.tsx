@@ -5,6 +5,14 @@ export const metadata = {
   title: "Niklas-dev | Portfolio",
   description:
     "This is the portfolio of Niklas-dev. I am a fullstack developer and I would love to work on your ideas!",
+  keywords: [
+    "niklas",
+    "niklas-dev",
+    "portfolio",
+    "developer",
+    "personal site",
+    "freelancing",
+  ],
 };
 
 export default function RootLayout({

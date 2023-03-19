@@ -9,7 +9,7 @@ export default function HomeSection() {
   const WORDS = ["developer", "fronted", "backend"];
 
   return (
-    <section className="relative min-h-screen h-screen w-screen bg-[url('../../public/assets/background-portfolio.png')] bg-center bg-no-repeat bg-cover">
+    <section className="relative min-h-screen h-screen w-screen background-anim bg-[url('../../public/assets/background-portfolio.png')] bg-center bg-no-repeat bg-cover">
       <div className="w-screen overflow-x-hidden absolute bottom-0">
         <svg
           className=""

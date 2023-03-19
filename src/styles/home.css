@@ -14,3 +14,21 @@
 /* "https://img.freepik.com/free-vector/abstract-backgound_23-2148052300.jpg?size=626&ext=jpg&ga=GA1.1.1800640979.1678582420&semt=ais" -*/
 
 /* https://img.freepik.com/free-vector/gradient-liquid-abstract-background_23-2148939140.jpg?size=626&ext=jpg&ga=GA1.2.1800640979.1678582420&semt=ais */
+
+.background-anim {
+  background-position-y: -2000px;
+  background-position-x: center;
+
+  animation: background-growing forwards 300ms linear;
+}
+
+@keyframes background-growing {
+  0% {
+    background-position-y: -2000px;
+    background-position-x: -600px;
+  }
+  100% {
+    background-position-x: center;
+    background-position-y: top;
+  }
+}

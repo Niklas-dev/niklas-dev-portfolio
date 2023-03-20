@@ -16,15 +16,16 @@
 /* https://img.freepik.com/free-vector/gradient-liquid-abstract-background_23-2148939140.jpg?size=626&ext=jpg&ga=GA1.2.1800640979.1678582420&semt=ais */
 
 .background-anim {
-  background-position-y: -2000px;
+  background-position-y: -3000px;
   background-position-x: center;
 
-  animation: background-growing forwards 300ms linear;
+  animation: background-growing forwards 700ms
+    cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 @keyframes background-growing {
   0% {
-    background-position-y: -2000px;
+    background-position-y: -3000px;
     background-position-x: -600px;
   }
   100% {

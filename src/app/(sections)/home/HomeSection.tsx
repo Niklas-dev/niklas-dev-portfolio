@@ -40,7 +40,7 @@ export default function HomeSection() {
             <TypingDisplay />
           </div>
           <p
-            className={`${zilla.className} text-center sm:text-start text-sectxtcolor text-[1rem] sm:text-[1.2rem] md:text-[1.4rem]  lg:text-[1.5rem] xl:text-[1.6rem] 3xl:text-[1.8rem] pt-2 md:pt-6 sm:w-3/4 px-7 sm:px-0 sm:pr-10`}
+            className={`${zilla.className}  text-center sm:text-start text-sectxtcolor text-[1rem] sm:text-[1.2rem] md:text-[1.4rem]  lg:text-[1.5rem] xl:text-[1.6rem] 3xl:text-[1.8rem] pt-2 md:pt-6 sm:w-3/4 px-7 sm:px-0 sm:pr-10`}
           >
             I am a fullstack focused webdeveloper. I design, plan out and
             develop web apps from the ground up to solve your problem.

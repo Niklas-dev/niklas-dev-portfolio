@@ -101,10 +101,6 @@ p {
 }
 
 .main-text-fade-in h3 {
-  animation-delay: 1200ms;
-}
-
-.main-text-fade-in h1 {
   animation-delay: 400ms;
 }
 
@@ -112,8 +108,12 @@ p {
   animation-delay: 800ms;
 }
 
-.main-text-fade-in div {
+.main-text-fade-in h1 {
   animation-delay: 1200ms;
+}
+
+.main-text-fade-in p {
+  animation-delay: 1600ms;
 }
 
 @keyframes blend-in {

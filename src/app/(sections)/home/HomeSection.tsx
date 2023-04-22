@@ -10,7 +10,7 @@ export default function HomeSection() {
   const WORDS = ["developer", "fronted", "backend"];
 
   return (
-    <section className="relative min-h-[800px] h-screen w-screen background-anim background-anim-delay bg-[url('../../public/assets/new_bg_design.png')] bg-no-repeat bg-cover">
+    <section className="relative min-h-[900px] md:min-h-screen h-screen w-screen background-anim background-anim-delay bg-[url('../../public/assets/new_bg_design.png')] bg-no-repeat bg-cover">
       <SocialsTop />
       <div className="w-screen overflow-x-hidden absolute bottom-0">
         <svg
@@ -32,7 +32,7 @@ export default function HomeSection() {
           >
             Hello, It&apos;s me
           </h3>
-          <div className="flex flex-col">
+          <div className="flex flex-col ">
             <h2
               className={`${zilla.className} pt-2 cursor-pointer  sm:pt-0 text-center sm:text-start text-[3rem] sm:text-[2.5rem] md:text-[3.5rem] lg:text-[5rem] xl:text-[6rem] 3xl:text-[7rem] leading-[1rem] md:leading-10 lg:leading-[5rem]`}
             >

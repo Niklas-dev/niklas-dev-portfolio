@@ -16,7 +16,7 @@ export default function TypingDisplay() {
         "I am a webdeveloper.",
       ],
 
-      startDelay: 300,
+      startDelay: 200,
       typeSpeed: 60,
       backSpeed: 60,
       backDelay: 1000,

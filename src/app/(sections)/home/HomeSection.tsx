@@ -26,18 +26,49 @@ export default function HomeSection() {
         </svg>
       </div>
       <div className="flex flex-row items-center justify-center pl-0 sm:pl-10 md:pl-28 lg:pl-28 llg:pl-36 xl:pl-40 2xl:pl-80 3xl:pl-96 text-white h-full w-full ">
-        <div className="relative">
+        <div className="relative main-text-fade-in">
           <h3
             className={`${zilla.className} text-center sm:text-start text-[1.5rem] sm:text-[1.3rem] lg:text-[2rem] xl:text-[1.5rem]`}
           >
             Hello, It&apos;s me
           </h3>
           <div className="flex flex-col">
-            <h1
-              className={`${zilla.className} pt-2 sm:pt-0 text-center sm:text-start text-[3rem] sm:text-[2.5rem] md:text-[3.5rem] lg:text-[5rem] xl:text-[6rem] 3xl:text-[7rem] leading-[1rem] md:leading-10 lg:leading-[5rem]`}
+            <h2
+              className={`${zilla.className} pt-2 cursor-pointer  sm:pt-0 text-center sm:text-start text-[3rem] sm:text-[2.5rem] md:text-[3.5rem] lg:text-[5rem] xl:text-[6rem] 3xl:text-[7rem] leading-[1rem] md:leading-10 lg:leading-[5rem]`}
             >
-              Niklas-dev
-            </h1>
+              <span className="hover:text-pink-600 transition-colors duration-200">
+                N
+              </span>
+              <span className="hover:text-pink-600 transition-colors duration-200">
+                i
+              </span>
+              <span className="hover:text-pink-600 transition-colors duration-200">
+                k
+              </span>
+              <span className="hover:text-pink-600 transition-colors duration-200">
+                l
+              </span>
+              <span className="hover:text-pink-600 transition-colors duration-200">
+                a
+              </span>
+              <span className="hover:text-pink-600 transition-colors duration-200">
+                s
+              </span>
+              <span className="hover:text-pink-600 transition-colors duration-200">
+                -
+              </span>
+              <span className="hover:text-pink-600 transition-colors duration-200">
+                d
+              </span>
+
+              <span className="hover:text-pink-600 transition-colors duration-200">
+                e
+              </span>
+
+              <span className="hover:text-pink-600 transition-colors duration-200">
+                v
+              </span>
+            </h2>
 
             <TypingDisplay />
           </div>

@@ -26,7 +26,7 @@
 }
 
 .background-anim-delay {
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 
 @keyframes background-growing {
@@ -47,18 +47,18 @@
 }
 
 .my-socials li:nth-child(1) {
-  animation-delay: 0.5s;
+  animation-delay: 4s;
 }
 
 .my-socials li:nth-child(2) {
-  animation-delay: 1s;
+  animation-delay: 4.5s;
 }
 
 .my-socials li:nth-child(3) {
-  animation-delay: 1.5s;
+  animation-delay: 5s;
 }
 .my-socials li:nth-child(4) {
-  animation-delay: 2s;
+  animation-delay: 5.5s;
 }
 
 .my-socials button {
@@ -90,5 +90,46 @@
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+
+.main-text-fade-in h3,
+h1,
+p {
+  opacity: 0;
+  animation: blend-in 800ms ease-out forwards;
+}
+
+.main-text-fade-in h3 {
+  animation-delay: 1200ms;
+}
+
+.main-text-fade-in h1 {
+  animation-delay: 400ms;
+}
+
+.main-text-fade-in h2 {
+  animation-delay: 800ms;
+}
+
+.main-text-fade-in div {
+  animation-delay: 1200ms;
+}
+
+@keyframes blend-in {
+  0% {
+    transform: translate(1000px, 0px);
+    scale: 0.8;
+    opacity: 0;
+  }
+  60% {
+    transform: translate(0px, 0);
+  }
+  70% {
+    scale: 0.8;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
   }
 }

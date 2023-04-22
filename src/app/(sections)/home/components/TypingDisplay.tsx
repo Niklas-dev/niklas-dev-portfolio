@@ -10,7 +10,7 @@ export default function TypingDisplay() {
   useEffect(() => {
     const typed = new Typed(el.current!, {
       strings: [
-        "I am a fronted developer.",
+        "I am a frontend developer.",
         "I am a backend developer.",
         "I am a fullstack developer.",
         "I am a webdeveloper.",

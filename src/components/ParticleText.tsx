@@ -21,7 +21,7 @@ export default function ParticleText() {
     const mouse = {
       x: 0,
       y: 0,
-      radius: 20,
+      radius: 100,
     };
 
     canvas.addEventListener("mousemove", function (event) {
@@ -31,8 +31,8 @@ export default function ParticleText() {
     });
 
     ctx.fillStyle = "white";
-    ctx.font = "10vmin sans-serif";
-    ctx.fillText("Skills", 0, 100);
+    ctx.font = "6vmin sans-serif";
+    ctx.fillText("Test", 0, 100);
     const textCoordinates = ctx.getImageData(0, 0, canvas.height, canvas.width); //height and width of canvas
 
     // blueprint to create particles
@@ -50,7 +50,7 @@ export default function ParticleText() {
         this.size = 1;
         this.baseX = this.x;
         this.baseY = this.y;
-        this.density = Math.random() * 15 + 10;
+        this.density = Math.random() * 15 + 5;
       }
 
       draw() {

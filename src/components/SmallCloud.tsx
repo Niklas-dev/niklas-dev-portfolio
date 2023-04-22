@@ -3,7 +3,7 @@ import React from "react";
 export default function SmallCloud({ classes }: { classes: string }) {
   return (
     <svg
-      className={`${classes} -z-10`}
+      className={`${classes} -z-10 `}
       xmlns="http://www.w3.org/2000/svg"
       width={248}
       height={189}

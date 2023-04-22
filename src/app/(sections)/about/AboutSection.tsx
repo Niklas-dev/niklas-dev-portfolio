@@ -60,8 +60,8 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="w-1/2 pr-24 py-8 flex flex-col gap-16">
-          <div className="flex flex-row justify-start">
-            <div className="relative ">
+          <div className="flex flex-row justify-start pl-10">
+            <div className="relative floating ">
               <SmallCloud classes="scale-[1.2]" />
               <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
                 <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
@@ -71,7 +71,7 @@ export default function AboutSection() {
             </div>
           </div>
           <div className="flex flex-row justify-between">
-            <div className="relative ">
+            <div className="relative floating-slowest">
               <SmallCloud classes="scale-70" />
               <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
                 <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
@@ -79,7 +79,7 @@ export default function AboutSection() {
                 </h3>
               </div>
             </div>
-            <div className="relative ">
+            <div className="relative floating-slow">
               <SmallCloud classes="scale-[1.6]" />
               <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
                 <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
@@ -89,7 +89,7 @@ export default function AboutSection() {
             </div>
           </div>
           <div className="flex flex-row justify-center">
-            <div className="relative ">
+            <div className="relative floating-slower transition-all">
               <SmallCloud classes="scale-[1.4]" />
               <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
                 <h3 className={`${zilla_bold.className} z-10 text-3xl `}>

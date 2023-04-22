@@ -83,7 +83,7 @@ export default function AboutSection() {
 
           <div className="flex flex-row justify-center  ">
             <div className="relative floating-slower transition-all ">
-              <SmallCloud className="scale-[1.7] md:scale-[1.9]" />
+              <SmallCloud className="scale-[1.55] md:scale-[1.9]" />
               <div className="absolute top-0 h-full w-full flex flex-row justify-center items-center">
                 <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
                   Active Learner

@@ -11,7 +11,7 @@ import SmallCloud from "@/components/SmallCloud";
 
 export default function AboutSection() {
   return (
-    <section className="relative min-h-[900px] w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-no-repeat bg-cover">
+    <section className="relative min-h-[900px] h-fit w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover">
       <div className="w-screen overflow-x-hidden h-12 overflow-y-clip absolute top">
         <svg
           className=""
@@ -26,7 +26,7 @@ export default function AboutSection() {
           />
         </svg>
       </div>
-      <div className="text-white z-10 flex flex-col lg:flex-row justify-between h-full pt-8 pb-32 ">
+      <div className="text-white z-10 flex flex-col lg:flex-row h-fit   justify-between pt-8 pb-32 ">
         <div className="lg:w-1/2 pt-10 md:pt-0 lg:p-0 pr-8 pl-4 w-full flex flex-row justify-center items-center">
           <div className="bg-primary rounded-3xl border-2 border-black h-fit w-[40rem] p-6 flex flex-col gap-3 md:gap-5">
             <h1 className={`${zilla_bold.className} text-2xl md:text-3xl`}>
@@ -46,7 +46,7 @@ export default function AboutSection() {
               After I distanced myself from programming for a while, I picked it
               back up at 13. This time it got me! The first language I learned
               back then was python. I developed small programs like calculators,
-              small games and managment systems. After I got confident with my
+              basic games and managment systems. After I got confident with my
               tools, I heard about machine learning and got right into it and
               yes it was hard.
             </p>
@@ -69,10 +69,10 @@ export default function AboutSection() {
             </p>
           </div>
         </div>
-        <div className="w-1/2 pr-24 py-8 flex flex-col gap-16">
+        <div className="md:w-1/2 w-full md:pr-24 pr-12 py-8 flex flex-col gap-28 md:gap-16 md:bg-none bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover">
           <div className="flex flex-row justify-start pl-10">
             <div className="relative floating ">
-              <SmallCloud classes="scale-[1.2]" />
+              <SmallCloud className=" scale-[1.2] md:scale-[1.4]" />
               <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
                 <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
                   Teamplayer
@@ -80,9 +80,20 @@ export default function AboutSection() {
               </div>
             </div>
           </div>
-          <div className="flex flex-row justify-between">
+
+          <div className="flex flex-row justify-center  ">
+            <div className="relative floating-slower transition-all ">
+              <SmallCloud className="scale-[1.7] md:scale-[1.9]" />
+              <div className="absolute top-0 h-full w-full flex flex-row justify-center items-center">
+                <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
+                  Active Learner
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div className="flex md:flex-row flex-col-reverse justify-center md:justify-between items-center gap-12 md:gap-0">
             <div className="relative floating-slowest">
-              <SmallCloud classes="scale-70" />
+              <SmallCloud className="scale-[1] md:scale-[1.2]" />
               <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
                 <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
                   ...
@@ -90,20 +101,10 @@ export default function AboutSection() {
               </div>
             </div>
             <div className="relative floating-slow ">
-              <SmallCloud classes="scale-[1.6]" />
+              <SmallCloud className="scale-[1.4] md:scale-[1.6]" />
               <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
                 <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
                   Creative
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-row justify-center">
-            <div className="relative floating-slower transition-all">
-              <SmallCloud classes="scale-[1.4]" />
-              <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
-                <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
-                  Active Learner
                 </h3>
               </div>
             </div>

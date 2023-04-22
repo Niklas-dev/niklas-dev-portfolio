@@ -1,3 +1,4 @@
+import ParticleText from "@/components/ParticleText";
 import React from "react";
 
 export default function SkillsSection() {

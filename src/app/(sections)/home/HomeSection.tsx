@@ -23,7 +23,7 @@ export default function HomeSection() {
           />
         </svg>
       </div>
-      <div className="flex flex-row items-center pl-0 sm:pl-10 md:pl-28 lg:pl-28 llg:pl-36 xl:pl-40 2xl:pl-80 3xl:pl-96 text-white h-full w-full ">
+      <div className="flex flex-row items-center pl-0 pr-4 sm:pl-10 md:pl-28 lg:pl-28 llg:pl-36 xl:pl-40 2xl:pl-80 3xl:pl-96 text-white h-full w-full ">
         <div className="relative">
           <h3
             className={`${zilla.className} text-center sm:text-start text-[1.5rem] sm:text-[1.3rem] lg:text-[2rem] xl:text-[1.5rem]`}

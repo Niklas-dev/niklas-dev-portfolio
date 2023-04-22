@@ -10,7 +10,7 @@ export default function HomeSection() {
   const WORDS = ["developer", "fronted", "backend"];
 
   return (
-    <section className="relative min-h-screen h-screen w-screen background-anim background-anim-delay bg-[url('../../public/assets/new_bg_design.png')] bg-no-repeat bg-cover">
+    <section className="relative min-h-[800px] h-screen w-screen background-anim background-anim-delay bg-[url('../../public/assets/new_bg_design.png')] bg-no-repeat bg-cover">
       <SocialsTop />
       <div className="w-screen overflow-x-hidden absolute bottom-0">
         <svg

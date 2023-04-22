@@ -27,7 +27,7 @@ export default function AboutSection() {
         </svg>
       </div>
       <div className="text-white z-10 flex flex-col lg:flex-row h-fit   justify-between pt-8 pb-32 ">
-        <div className="lg:w-1/2 pt-10 md:pt-0 lg:p-0 w-full flex flex-row justify-center items-center">
+        <div className="lg:w-1/2 pt-10 md:pt-0 lg:p-0 px-6 w-full flex flex-row justify-center items-center">
           <div className="bg-primary rounded-3xl border-2 border-black h-fit w-[40rem] p-6 flex flex-col gap-3 md:gap-5">
             <h1 className={`${zilla_bold.className} text-2xl md:text-3xl`}>
               Who Am I...

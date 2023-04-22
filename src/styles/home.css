@@ -19,10 +19,14 @@
 
 .background-anim {
   background-position-y: -3000px;
-  background-position-x: center;
+  background-position-x: -600px;
 
   animation: background-growing forwards 1000ms
     cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.background-anim-delay {
+  animation-delay: 2s;
 }
 
 @keyframes background-growing {
@@ -33,5 +37,58 @@
   100% {
     background-position-x: center;
     background-position-y: top;
+  }
+}
+
+.my-socials li {
+  transform: translateY(-400px);
+  opacity: 0;
+  animation: fade-in 800ms ease-out forwards;
+}
+
+.my-socials li:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.my-socials li:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.my-socials li:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.my-socials li:nth-child(4) {
+  animation-delay: 2s;
+}
+
+.my-socials button {
+  animation-delay: 2s;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateY(-400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.back-to-fade {
+  transform: translateY(-400px);
+  opacity: 0;
+  animation: fade-in-button 800ms ease-out forwards;
+}
+
+@keyframes fade-in-button {
+  0% {
+    transform: translateY(400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }

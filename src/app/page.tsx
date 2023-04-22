@@ -1,10 +1,12 @@
+import BackUpButton from "@/components/BackUpButton";
 import AboutSection from "./(sections)/about/AboutSection";
 import HomeSection from "./(sections)/home/HomeSection";
 import SkillsSection from "./(sections)/skills/SkillsSection";
 
 export default async function Home() {
   return (
-    <main className="h-screen w-screen flex flex-col">
+    <main className="h-screen w-screen flex flex-col relative">
+      <BackUpButton />
       <HomeSection />
 
       <AboutSection />

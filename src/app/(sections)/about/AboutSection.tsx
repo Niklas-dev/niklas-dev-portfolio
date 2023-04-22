@@ -11,7 +11,7 @@ import SmallCloud from "@/components/SmallCloud";
 
 export default function AboutSection() {
   return (
-    <section className="relative min-h-[900px] w-screen bg-[url('../../public/assets/background-portfolio-about.png')] bg-center bg-no-repeat bg-cover">
+    <section className="relative min-h-[900px] w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-no-repeat bg-cover">
       <div className="w-screen overflow-x-hidden h-12 overflow-y-clip absolute top">
         <svg
           className=""

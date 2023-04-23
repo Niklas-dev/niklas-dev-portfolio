@@ -24,7 +24,6 @@ export default function RootLayout({
     <html lang="en">
       <body className=" bg-background overflow-x-hidden">
         <main className="">{children}</main>
-        <NavBar />
       </body>
     </html>
   );

@@ -11,8 +11,8 @@ import SmallCloud from "@/components/SmallCloud";
 
 export default function AboutSection() {
   return (
-    <section className="relative min-h-[900px] h-fit w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover">
-      <div className="w-screen overflow-x-hidden h-12 overflow-y-clip absolute top">
+    <section className="relative xl:min-h-screen min-h-fit w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover ">
+      <div className="w-screen overflow-x-hidden h-12 overflow-y-clip absolute top ">
         <svg
           className=""
           width="3000"
@@ -26,22 +26,25 @@ export default function AboutSection() {
           />
         </svg>
       </div>
-      <div className="text-white z-10 flex flex-col lg:flex-row h-fit   justify-between pt-8 pb-32 ">
+      <div className="text-white z-10 flex flex-col lg:flex-row h-fit   justify-between pt-8 xl:pt-28 pb-32 ">
         <div className="lg:w-1/2 pt-10 md:pt-0 lg:p-0 px-6 w-full flex flex-row justify-center items-center">
-          <div className="bg-primary rounded-3xl border-2 border-black h-fit w-[40rem] p-6 flex flex-col gap-3 md:gap-5">
-            <h1 className={`${zilla_bold.className} text-2xl md:text-3xl`}>
+          <div className="bg-primary rounded-3xl border-2 border-black h-fit w-[40rem] xl:w-[45rem] p-6 flex flex-col gap-3 md:gap-5">
+            <h6
+              className={`${zilla_bold.className} text-2xl md:text-3xl xl:text-4xl `}
+            >
               Who Am I...
-            </h1>
+            </h6>
             <p
-              className={`${zilla_semi.className} text-lg md:text-xl text-sectxtcolor`}
+              className={`${zilla_semi.className} text-lg md:text-xl xl:text-2xl text-sectxtcolor`}
             >
               I am Niklas, right now 17 years old, a fullstack developer with a
               love for typescript and python. My first contact with software
               development was when i was around 10 years old. Back then I
               created plugins with java but I left that behind quickly.
             </p>
+
             <p
-              className={`${zilla_semi.className} text-lg md:text-xl text-sectxtcolor`}
+              className={`${zilla_semi.className} text-lg md:text-xl xl:text-2xl text-sectxtcolor`}
             >
               After I distanced myself from programming for a while, I picked it
               back up at 13. This time it got me! The first language I learned
@@ -51,7 +54,7 @@ export default function AboutSection() {
               yes it was hard.
             </p>
             <p
-              className={`${zilla_semi.className} text-lg md:text-xl text-sectxtcolor`}
+              className={`${zilla_semi.className} text-lg md:text-xl xl:text-2xl text-sectxtcolor`}
             >
               My first big project I picked up was self driving car with a
               raspberry pi, self build car, opencv, self build car, and a self
@@ -59,7 +62,7 @@ export default function AboutSection() {
               presentation about autonomous driving.
             </p>
             <p
-              className={`${zilla_semi.className} text-lg md:text-xl text-sectxtcolor`}
+              className={`${zilla_semi.className} text-lg md:text-xl xl:text-2xl text-sectxtcolor`}
             >
               This all brought me to todays point. Now I am creating fullstack
               application and keep learning more! Python sticked to me as a
@@ -69,7 +72,7 @@ export default function AboutSection() {
             </p>
           </div>
         </div>
-        <div className="md:w-1/2 w-full md:pr-24 pr-12 py-8 flex flex-col gap-28 md:gap-16 md:bg-none bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover">
+        <div className="lg:w-1/2 w-full md:pr-24 pr-12 py-8 flex flex-col gap-28 md:gap-16 md:bg-none bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover">
           <div className="flex flex-row justify-start pl-10">
             <div className="relative floating ">
               <SmallCloud className=" scale-[1.2] md:scale-[1.4]" />

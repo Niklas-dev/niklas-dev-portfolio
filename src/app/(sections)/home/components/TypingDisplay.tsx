@@ -29,7 +29,7 @@ export default function TypingDisplay() {
     };
   }, []);
   return (
-    <h1 className="flex items-center justify-center box-border sm:block sm:items-start sm:justify-start pt-2 sm:pt-0 ">
+    <h1 className="main-text-fade-in-third flex items-center justify-center box-border sm:block sm:items-start sm:justify-start pt-2 sm:pt-0 ">
       <span
         ref={el}
         style={{}}

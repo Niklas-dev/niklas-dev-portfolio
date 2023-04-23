@@ -95,24 +95,27 @@
 
 .main-text-fade-in h3,
 h1,
-p {
+h4,
+h5 {
   opacity: 0;
   animation: blend-in 800ms ease-out forwards;
 }
 
-.main-text-fade-in h3 {
+/**/
+
+.main-text-fade-in .main-text-fade-in-first {
   animation-delay: 400ms;
 }
 
-.main-text-fade-in h2 {
+.main-text-fade-in .main-text-fade-in-second {
   animation-delay: 800ms;
 }
 
-.main-text-fade-in h1 {
+.main-text-fade-in .main-text-fade-in-third {
   animation-delay: 1200ms;
 }
 
-.main-text-fade-in p {
+.main-text-fade-in .main-text-fade-in-fourth {
   animation-delay: 1600ms;
 }
 

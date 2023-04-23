@@ -79,7 +79,7 @@
 .back-to-fade {
   transform: translateY(-400px);
   opacity: 0;
-  animation: fade-in-button 800ms ease-out forwards;
+  animation: fade-in-button 800ms ease-out forwards 7s;
 }
 
 @keyframes fade-in-button {

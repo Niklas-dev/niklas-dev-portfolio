@@ -4,10 +4,12 @@
 
 .hidenavbar {
   animation: slide-down forwards 200ms ease-in-out;
+  bottom: -5rem;
 }
 
 @keyframes slide-up {
   0% {
+    opacity: 0;
     bottom: -5rem;
   }
   55% {
@@ -21,6 +23,7 @@
   65% {
     bottom: 0.4rem;
     display: block;
+    opacity: 1;
   }
   70% {
     bottom: 1rem;
@@ -59,5 +62,15 @@
   100% {
     bottom: -4.5rem;
     display: hidden;
+    opacity: 1;
   }
+}
+
+.intial-anim {
+  bottom: -5rem;
+  animation: initial forwards 200ms ease-in-out;
+}
+
+.initial-delay {
+  animation-delay: 5s;
 }

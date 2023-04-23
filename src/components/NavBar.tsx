@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "@/styles/navbar.css";
 import { Zilla_Slab } from "next/font/google";
 
@@ -7,6 +7,7 @@ const zilla = Zilla_Slab({ weight: "700", subsets: ["latin"] });
 
 export default function NavBar() {
   const navNarRef = useRef<HTMLInputElement>(null);
+  const [show, setShow] = useState(false);
 
   const onScrollStop = (callback: any) => {
     let isScrolling: any;
@@ -33,6 +34,9 @@ export default function NavBar() {
   };
 
   useEffect(() => {
+    const timer = setTimeout(() => {
+      setShow(true);
+    }, 6000);
     navNarRef.current?.classList.add("shownavbar");
     onScroll(() => {
       console.log("The user has started scrolling");
@@ -44,11 +48,18 @@ export default function NavBar() {
       navNarRef.current?.classList.remove("hidenavbar");
       navNarRef.current?.classList.add("shownavbar");
     });
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="absolute w-screen flex justify-center bg-slate-100">
-      <nav ref={navNarRef} className="bg-primary z-10 fixed rounded-md ">
+    <div className="absolute w-screen h-screen  flex justify-center items-end">
+      <nav
+        ref={navNarRef}
+        className={`${
+          show ? "shownavbar" : "hidden"
+        } bg-primary  z-10 fixed rounded-md`}
+      >
         <ul className="flex  flex-row gap-4 md:gap-8 text-base md:text-xl py-4 px-4 md:px-6 text-txtcolor">
           <button
             className={`${zilla.className} scale-100 hover:scale-95 hover:cursor-pointer  transition-transform hover:duration-200`}

@@ -36,36 +36,36 @@ export default function HomeSection() {
             <h2
               className={`${zilla.className} main-text-fade-in-second pt-2 cursor-pointer  sm:pt-0 text-center sm:text-start text-[3rem] sm:text-[2.5rem] md:text-[3.5rem] lg:text-[5rem] xl:text-[6rem] 3xl:text-[7rem] leading-[1rem] md:leading-10 lg:leading-[5rem]`}
             >
-              <span className="hover:text-pink-600 transition-colors duration-200">
+              <span className="hover:text-[#E1637F] hover:drop-shadow-lg transition-all duration-400">
                 N
               </span>
-              <span className="hover:text-pink-600 transition-colors duration-200">
+              <span className="hover:text-[#E1637F] hover:drop-shadow-lg transition-colors duration-400">
                 i
               </span>
-              <span className="hover:text-pink-600 transition-colors duration-200">
+              <span className="hover:text-[#E1637F] hover:drop-shadow-lg transition-colors duration-400">
                 k
               </span>
-              <span className="hover:text-pink-600 transition-colors duration-200">
+              <span className="hover:text-[#E1637F] hover:drop-shadow-lg transition-colors duration-400">
                 l
               </span>
-              <span className="hover:text-pink-600 transition-colors duration-200">
+              <span className="hover:text-[#E1637F] hover:drop-shadow-lg transition-colors duration-400">
                 a
               </span>
-              <span className="hover:text-pink-600 transition-colors duration-200">
+              <span className="hover:text-[#E1637F] hover:drop-shadow-lg transition-colors duration-400">
                 s
               </span>
-              <span className="hover:text-pink-600 transition-colors duration-200">
+              <span className="hover:text-[#E1637F] hover:drop-shadow-lg transition-colors duration-400">
                 -
               </span>
-              <span className="hover:text-pink-600 transition-colors duration-200">
+              <span className="hover:text-[#E1637F] hover:drop-shadow-lg transition-colors duration-400">
                 d
               </span>
 
-              <span className="hover:text-pink-600 transition-colors duration-200">
+              <span className="hover:text-[#E1637F] transition-colors duration-200">
                 e
               </span>
 
-              <span className="hover:text-pink-600 transition-colors duration-200">
+              <span className="hover:text-[#E1637F] transition-colors duration-200">
                 v
               </span>
             </h2>

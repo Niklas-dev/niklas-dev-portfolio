@@ -8,6 +8,7 @@ const zilla_semi = Zilla_Slab({ subsets: ["latin"], weight: "600" });
 
 import { Zilla_Slab } from "next/font/google";
 import SmallCloud from "@/components/SmallCloud";
+import CloudFadeIn from "@/components/CloudFadeIn";
 
 export default function AboutSection() {
   return (
@@ -74,43 +75,51 @@ export default function AboutSection() {
         </div>
         <div className="lg:w-1/2 w-full md:pr-24 pr-12 py-8 flex flex-col gap-28 md:gap-16 md:bg-none bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover">
           <div className="flex flex-row justify-start pl-10">
-            <div className="relative floating ">
-              <SmallCloud className=" scale-[1.2] md:scale-[1.4]" />
-              <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
-                <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
-                  Teamplayer
-                </h3>
+            <CloudFadeIn>
+              <div className="relative floating cloud-fade-in-animation">
+                <SmallCloud className=" scale-[1.2] md:scale-[1.4]" />
+                <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
+                  <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
+                    Teamplayer
+                  </h3>
+                </div>
               </div>
-            </div>
+            </CloudFadeIn>
           </div>
 
           <div className="flex flex-row justify-center  ">
-            <div className="relative floating-slower transition-all ">
-              <SmallCloud className="scale-[1.55] md:scale-[1.9]" />
-              <div className="absolute top-0 h-full w-full flex flex-row justify-center items-center">
-                <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
-                  Active Learner
-                </h3>
+            <CloudFadeIn>
+              <div className="relative floating-slower transition-all cloud-fade-in-animation">
+                <SmallCloud className="scale-[1.55] md:scale-[1.9]" />
+                <div className="absolute top-0 h-full w-full flex flex-row justify-center items-center">
+                  <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
+                    Active Learner
+                  </h3>
+                </div>
               </div>
-            </div>
+            </CloudFadeIn>
           </div>
-          <div className="flex md:flex-row flex-col-reverse justify-center md:justify-between items-center gap-12 md:gap-0">
-            <div className="relative floating-slowest">
-              <SmallCloud className="scale-[1] md:scale-[1.2]" />
-              <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
-                <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
-                  ...
-                </h3>
+          <div className="flex md:flex-row flex-col-reverse justify-center md:justify-between items-center gap-12 md:gap-0 pt-4">
+            <CloudFadeIn>
+              <div className="relative floating-slowest cloud-fade-in-animation">
+                <SmallCloud className="scale-[1] md:scale-[1.2]" />
+                <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
+                  <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
+                    ...
+                  </h3>
+                </div>
               </div>
-            </div>
-            <div className="relative floating-slow ">
-              <SmallCloud className="scale-[1.4] md:scale-[1.6]" />
-              <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
-                <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
-                  Creative
-                </h3>
+            </CloudFadeIn>
+            <CloudFadeIn>
+              <div className="relative floating-slow cloud-fade-in-animation md:mr-28">
+                <SmallCloud className="scale-[1.4] md:scale-[1.6]" />
+                <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
+                  <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
+                    Creative
+                  </h3>
+                </div>
               </div>
-            </div>
+            </CloudFadeIn>
           </div>
         </div>
       </div>

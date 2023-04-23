@@ -47,9 +47,9 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center absolute w-screen h-screen bg-red-500">
       <nav ref={navNarRef} className="bg-primary z-10 fixed rounded-md ">
-        <ul className="flex flex-row gap-4 md:gap-8 text-base md:text-xl py-4 px-4 md:px-6 text-txtcolor">
+        <ul className="flex  flex-row gap-4 md:gap-8 text-base md:text-xl py-4 px-4 md:px-6 text-txtcolor">
           <button
             className={`${zilla.className} scale-100 hover:scale-95 hover:cursor-pointer  transition-transform hover:duration-200`}
           >

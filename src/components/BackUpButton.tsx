@@ -37,8 +37,8 @@ export default function BackUpButton() {
             y2={-4.46}
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#F7FF00" />
-            <stop offset={1} stopColor="#DB36A4" />
+            <stop stopColor="#ffffff" />
+            <stop offset={1} stopColor="#ffffff" />
           </linearGradient>
           <clipPath id="a">
             <path fill="#fff" d="M.5 40.5V.5h40v40z" />

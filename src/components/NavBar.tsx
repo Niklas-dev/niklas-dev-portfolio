@@ -58,7 +58,7 @@ export default function NavBar() {
         ref={navNarRef}
         className={`${
           show ? "shownavbar" : "hidden"
-        } bg-primary  z-10 fixed rounded-md`}
+        } bg-primary  z-10 fixed rounded-md shadow-xl border-2 border-black`}
       >
         <ul className="flex  flex-row gap-4 md:gap-8 text-base md:text-xl py-4 px-4 md:px-6 text-txtcolor">
           <button

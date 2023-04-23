@@ -76,23 +76,6 @@
   }
 }
 
-.back-to-fade {
-  transform: translateY(-400px);
-  opacity: 0;
-  animation: fade-in-button 800ms ease-out forwards 7s;
-}
-
-@keyframes fade-in-button {
-  0% {
-    transform: translateY(400px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
 .main-text-fade-in h3,
 h1,
 h4,

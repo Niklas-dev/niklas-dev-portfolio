@@ -11,7 +11,7 @@ export default function BackUpButton() {
           behavior: "smooth",
         })
       }
-      className="fixed back-to-fade bg-[#212121] shadow-xl rounded-lg h-14 w-14 md:h-16 md:w-16 z-10 flex justify-center items-center right-2 md:right-4  top-2 md:top-auto md:bottom-4"
+      className="fixed back-to-fade-top md:back-to-fade bg-[#212121] shadow-xl rounded-lg h-14 w-14 md:h-16 md:w-16 z-10 flex justify-center items-center right-2 md:right-4  top-2 md:top-auto md:bottom-4"
       type="button"
       id="back-to-top"
       aria-label="Back to top"

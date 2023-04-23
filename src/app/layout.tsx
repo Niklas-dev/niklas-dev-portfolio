@@ -23,10 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className=" bg-background overflow-x-hidden">
-        <main className="">
-          {children}
-          <NavBar />
-        </main>
+        <main className="">{children}</main>
+        <NavBar />
       </body>
     </html>
   );

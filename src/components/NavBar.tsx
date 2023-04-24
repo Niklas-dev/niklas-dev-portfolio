@@ -53,7 +53,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className="absolute w-screen h-screen  flex justify-center items-end">
+    <div className="absolute w-screen h-screen  flex justify-center items-end ">
       <nav
         ref={navNarRef}
         className={`${

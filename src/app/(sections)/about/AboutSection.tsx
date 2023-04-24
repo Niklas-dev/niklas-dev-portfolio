@@ -12,7 +12,7 @@ import CloudFadeIn from "@/components/CloudFadeIn";
 
 export default function AboutSection() {
   return (
-    <section className="relative xl:min-h-screen min-h-fit w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover overflow-x-clip">
+    <section className="relative xl:min-h-screen min-h-fit w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover">
       <div className="w-screen overflow-x-hidden h-12 overflow-y-clip absolute top ">
         <svg
           className=""
@@ -73,11 +73,11 @@ export default function AboutSection() {
             </p>
           </div>
         </div>
-        <div className="xl:w-1/2 w-full xl:pr-24 pr-4 py-8 flex flex-col gap-28 md:gap-16 md:bg-none bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover">
+        <div className="xl:w-1/2 w-full xl:pr-24 pr-4 py-8 flex flex-col gap-28 md:gap-16 md:bg-none bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover ">
           <div className="flex flex-row justify-start pl-10">
             <CloudFadeIn>
               <div className="relative floating cloud-fade-in-animation">
-                <SmallCloud className=" scale-[1.2] md:scale-[1.4]" />
+                <SmallCloud className=" scale-[1.2] xl:scale-[1.4]" />
                 <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
                   <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
                     Teamplayer
@@ -90,7 +90,7 @@ export default function AboutSection() {
           <div className="flex flex-row justify-center  ">
             <CloudFadeIn>
               <div className="relative floating-slower transition-all cloud-fade-in-animation">
-                <SmallCloud className="scale-[1.55] md:scale-[1.9]" />
+                <SmallCloud className="scale-[1.35] xl:scale-[1.9]" />
                 <div className="absolute top-0 h-full w-full flex flex-row justify-center items-center">
                   <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
                     Active Learner
@@ -99,10 +99,10 @@ export default function AboutSection() {
               </div>
             </CloudFadeIn>
           </div>
-          <div className="flex md:flex-row flex-col-reverse justify-center md:justify-between items-center gap-12 md:gap-0 pt-4 pl-12">
+          <div className="flex md:flex-row flex-col-reverse justify-center md:justify-between items-center gap-12 md:gap-0 pt-4">
             <CloudFadeIn>
               <div className="relative floating-slowest cloud-fade-in-animation">
-                <SmallCloud className="scale-[1] md:scale-[1.2]" />
+                <SmallCloud className="scale-[1] xl:scale-[1.2]" />
                 <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
                   <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
                     ...
@@ -112,7 +112,7 @@ export default function AboutSection() {
             </CloudFadeIn>
             <CloudFadeIn>
               <div className="relative floating-slow cloud-fade-in-animation md:mr-28">
-                <SmallCloud className="scale-[1.4] md:scale-[1.6]" />
+                <SmallCloud className="scale-[1.2] xl:scale-[1.6]" />
                 <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
                   <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
                     Creative

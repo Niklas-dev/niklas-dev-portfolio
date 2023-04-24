@@ -12,7 +12,7 @@ import CloudFadeIn from "@/components/CloudFadeIn";
 
 export default function AboutSection() {
   return (
-    <section className="relative xl:min-h-screen min-h-fit w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover ">
+    <section className="relative xl:min-h-screen min-h-fit w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover overflow-x-clip">
       <div className="w-screen overflow-x-hidden h-12 overflow-y-clip absolute top ">
         <svg
           className=""
@@ -27,8 +27,8 @@ export default function AboutSection() {
           />
         </svg>
       </div>
-      <div className="text-white z-10 flex flex-col lg:flex-row h-fit   justify-between pt-8 xl:pt-28 pb-32 ">
-        <div className="lg:w-1/2 pt-10 md:pt-0 lg:p-0 px-6 w-full flex flex-row justify-center items-center">
+      <div className="text-white z-10 flex flex-col xl:flex-row h-fit   justify-between pt-8 xl:pt-28 pb-32 ">
+        <div className="xl:w-1/2 pt-10 md:pt-0 lg:p-0 px-6 w-full flex flex-row justify-center items-center">
           <div className="bg-primary rounded-3xl border-2 border-black h-fit w-[40rem] xl:w-[45rem] p-6 flex flex-col gap-3 md:gap-5">
             <h6
               className={`${zilla_bold.className} text-2xl md:text-3xl xl:text-4xl `}
@@ -73,7 +73,7 @@ export default function AboutSection() {
             </p>
           </div>
         </div>
-        <div className="lg:w-1/2 w-full md:pr-24 pr-12 py-8 flex flex-col gap-28 md:gap-16 md:bg-none bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover">
+        <div className="xl:w-1/2 w-full xl:pr-24 pr-4 py-8 flex flex-col gap-28 md:gap-16 md:bg-none bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover">
           <div className="flex flex-row justify-start pl-10">
             <CloudFadeIn>
               <div className="relative floating cloud-fade-in-animation">
@@ -99,7 +99,7 @@ export default function AboutSection() {
               </div>
             </CloudFadeIn>
           </div>
-          <div className="flex md:flex-row flex-col-reverse justify-center md:justify-between items-center gap-12 md:gap-0 pt-4">
+          <div className="flex md:flex-row flex-col-reverse justify-center md:justify-between items-center gap-12 md:gap-0 pt-4 pl-12">
             <CloudFadeIn>
               <div className="relative floating-slowest cloud-fade-in-animation">
                 <SmallCloud className="scale-[1] md:scale-[1.2]" />

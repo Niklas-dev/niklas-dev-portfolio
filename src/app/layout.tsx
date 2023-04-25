@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className=" bg-background overflow-x-hidden">
+      <body className=" bg-background overflow-x-clip">
         <main className="">{children}</main>
       </body>
     </html>

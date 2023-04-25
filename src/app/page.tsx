@@ -6,7 +6,7 @@ import NavBar from "@/components/NavBar";
 
 export default async function Home() {
   return (
-    <main className="h-screen w-screen flex flex-col relative">
+    <main className="h-screen w-screen flex flex-col relative ">
       <NavBar />
       <BackUpButton />
       <HomeSection />

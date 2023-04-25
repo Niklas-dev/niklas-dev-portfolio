@@ -12,7 +12,7 @@ import CloudFadeIn from "@/components/CloudFadeIn";
 
 export default function AboutSection() {
   return (
-    <section className="relative xl:min-h-screen min-h-fit w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover">
+    <section className="relative xl:min-h-screen min-h-fit w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover ">
       <div className="w-screen overflow-x-hidden h-12 overflow-y-clip absolute top ">
         <svg
           className=""
@@ -73,7 +73,7 @@ export default function AboutSection() {
             </p>
           </div>
         </div>
-        <div className="xl:w-1/2 w-full xl:pr-24 pr-4 py-8 flex flex-col gap-28 md:gap-16 md:bg-none bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover ">
+        <div className="xl:w-1/2 w-full xl:pr-24 pr-4 py-8 flex flex-col gap-28 md:gap-16 md:bg-none bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover overflow-x-clip">
           <div className="flex flex-row justify-start pl-10">
             <CloudFadeIn>
               <div className="relative floating cloud-fade-in-animation">

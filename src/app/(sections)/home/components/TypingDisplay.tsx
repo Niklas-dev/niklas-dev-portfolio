@@ -33,7 +33,7 @@ export default function TypingDisplay() {
       <span
         ref={el}
         style={{}}
-        className={`${zilla.className} font-dev typed-cursor text-[2.1rem] sm:text-[3.4rem] md:text-[3.5rem] lg:text-[4.8rem] xl:text-[6.2rem] 3xl:text-[7.2rem]  second-text`}
+        className={`${zilla.className} font-dev typed-cursor text-[2.1rem] sm:text-[3.4rem] md:text-[3.5rem] lg:text-[4.8rem] xl:text-[5.4rem] 3xl:text-[7.2rem]  second-text`}
       ></span>
     </h1>
   );

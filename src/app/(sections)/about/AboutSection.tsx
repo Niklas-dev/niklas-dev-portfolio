@@ -9,6 +9,7 @@ const zilla_semi = Zilla_Slab({ subsets: ["latin"], weight: "600" });
 import { Zilla_Slab } from "next/font/google";
 import SmallCloud from "@/components/SmallCloud";
 import CloudFadeIn from "@/components/CloudFadeIn";
+import AboutPartText from "@/components/AboutPartText";
 
 export default function AboutSection() {
   return (
@@ -35,42 +36,36 @@ export default function AboutSection() {
             >
               Who Am I...
             </h6>
-            <p
-              className={`${zilla_semi.className} text-lg md:text-xl xl:text-2xl text-sectxtcolor`}
-            >
+            <AboutPartText>
               I am Niklas, right now 17 years old, a fullstack developer with a
               love for typescript and python. My first contact with software
               development was when i was around 10 years old. Back then I
               created plugins with java but I left that behind quickly.
-            </p>
+            </AboutPartText>
 
-            <p
-              className={`${zilla_semi.className} text-lg md:text-xl xl:text-2xl text-sectxtcolor`}
-            >
+            <AboutPartText>
               After I distanced myself from programming for a while, I picked it
               back up at 13. This time it got me! The first language I learned
               back then was python. I developed small programs like calculators,
               basic games and managment systems. After I got confident with my
               tools, I heard about machine learning and got right into it and
               yes it was hard.
-            </p>
-            <p
-              className={`${zilla_semi.className} text-lg md:text-xl xl:text-2xl text-sectxtcolor`}
-            >
+            </AboutPartText>
+
+            <AboutPartText>
               My first big project I picked up was self driving car with a
               raspberry pi, self build car, opencv, self build car, and a self
               trained neural network. I created that project for a school
               presentation about autonomous driving.
-            </p>
-            <p
-              className={`${zilla_semi.className} text-lg md:text-xl xl:text-2xl text-sectxtcolor`}
-            >
+            </AboutPartText>
+
+            <AboutPartText>
               This all brought me to todays point. Now I am creating fullstack
               application and keep learning more! Python sticked to me as a
               backend language, but I added new tools to my backpack like
               typescipt, react, nextjs, django, tailwind, flutter, dart and
               more.
-            </p>
+            </AboutPartText>
           </div>
         </div>
         <div className="xl:w-1/2 w-full xl:pr-24 pr-4 py-8 flex flex-col gap-28 md:gap-16 md:bg-none bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover overflow-x-clip">

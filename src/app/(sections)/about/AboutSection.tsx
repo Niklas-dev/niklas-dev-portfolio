@@ -10,32 +10,40 @@ import { Zilla_Slab } from "next/font/google";
 import SmallCloud from "@/components/SmallCloud";
 import CloudFadeIn from "@/components/CloudFadeIn";
 import AboutPartText from "@/components/AboutPartText";
-
+import Clock from "@/components/Clock";
+const zilla = Zilla_Slab({ subsets: ["latin"], weight: "700" });
 export default function AboutSection() {
   return (
-    <section className="relative xl:min-h-screen min-h-fit w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover ">
-      <div className="w-screen overflow-x-hidden h-12 overflow-y-clip absolute top ">
+    <section className="relative xl:min-h-screen min-h-screen w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover ">
+      <div className="w-screen overflow-x-hidden absolute ">
         <svg
           className=""
           width="3000"
-          height="300"
           viewBox="0 0 2000 200"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="m0 18 12.8-1c12.9-1 38.5-3 64.2-1 25.7 2 51.3 8 77 7.3 25.7-.6 51.3-8 77-8.6 25.7-.7 51.3 5.3 77 5.8 25.7.5 51.3-4.5 77-6 25.7-1.5 51.3.5 76.8 1.3 25.5.9 50.9.5 76.4-.5 25.5-1 51.1-2.6 76.8-3 25.7-.3 51.3.7 77 .9 25.7.1 51.3-.5 77 2.6C794.7 19 820.3 26 846 29c25.7 3 51.3 2 77 1.2 25.7-.9 51.3-1.5 77-4.2 25.7-2.7 51.3-7.3 77-10.7 25.7-3.3 51.3-5.3 77-6.5 25.7-1.1 51.3-1.5 77 .7 25.7 2.2 51.3 6.8 77 11.8 25.7 5 51.3 10.4 77 7.9 25.7-2.5 51.3-12.9 76.8-13.5 25.5-.7 50.9 8.3 76.4 8.6 25.5.4 51.1-8 76.8-12.3 25.7-4.3 51.3-4.7 77 0 25.7 4.7 51.3 14.3 77 17.3 25.7 3 51.3-.6 77-5.3 25.7-4.7 51.3-10.3 77-9.5 25.7.8 51.3 8.2 64.2 11.8L2000 30V0H0Z"
             fill="#0e0e0e"
+            d="m0 55 21.5-.8C43 53.3 86 51.7 129 48.7s86-7.4 129-9c43-1.7 86-.7 129 2.1 43 2.9 86 7.5 129 8.5s86-1.6 129-2.5c43-.8 86 .2 129-.3s86-2.5 129-1.2c43 1.4 86 6 129 7.2 43 1.2 86-1.2 129-1 43 .2 86 2.8 129 .7 43-2.2 86-9.2 129-9.2s86 7 129 6.3c43-.6 86-9 129-9.6 43-.7 86 6.3 129 8.5 43 2.1 86-.5 129.2.3 43.1.8 86.5 5.2 129.6 5.7 43.2.5 86.2-2.9 129.2-6.5 43-3.7 86-7.7 129-9.5 43-1.9 86-1.5 129 1.5s86 8.6 129 5.8 86-14.2 129-19c43-4.8 86-3.2 129-.8 43 2.3 86 5.3 129 9.1 43 3.9 86 8.5 129 8.9 43 .3 86-3.7 129-8.7 43-5 86-11 129-10s86 9 129 10.5 86-3.5 129-5.7c43-2.1 86-1.5 129 3.7s86 14.8 129 16.8 86-3.6 107.5-6.5L4000 42V0H0Z"
           />
         </svg>
       </div>
-      <div className="text-white z-10 flex flex-col xl:flex-row h-fit   justify-between pt-8 xl:pt-28 pb-32 ">
-        <div className="xl:w-1/2 pt-10 md:pt-0 lg:p-0 px-6 w-full flex flex-row justify-center items-center">
-          <div className="bg-primary rounded-3xl border-2 border-black h-fit w-[40rem] xl:w-[45rem] p-6 flex flex-col gap-3 md:gap-5">
-            <h6
-              className={`${zilla_bold.className} text-2xl md:text-3xl xl:text-4xl `}
-            >
-              Who Am I...
-            </h6>
+      <div className="h-full w-full bg-black bg-opacity-70 text-white flex flex-col justify-center items-center ">
+        <div className="flex flex-col justify-center items-center gap-6">
+          <h3 className={`${zilla.className} text-3xl`}>
+            But now the time has come...
+          </h3>
+          <Clock />
+          <h3 className={`${zilla.className} text-3xl`}>
+            to get to know me and my skills.
+          </h3>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* 
             <AboutPartText>
               I am Niklas, right now 17 years old, a fullstack developer with a
               love for typescript and python. My first contact with software
@@ -66,58 +74,4 @@ export default function AboutSection() {
               typescipt, react, nextjs, django, tailwind, flutter, dart and
               more.
             </AboutPartText>
-          </div>
-        </div>
-        <div className="xl:w-1/2 w-full xl:pr-24 pr-4 py-8 flex flex-col gap-28 md:gap-16 md:bg-none bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover overflow-x-clip">
-          <div className="flex flex-row justify-start pl-10">
-            <CloudFadeIn>
-              <div className="relative floating cloud-fade-in-animation">
-                <SmallCloud className=" scale-[1.2] xl:scale-[1.4]" />
-                <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
-                  <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
-                    Teamplayer
-                  </h3>
-                </div>
-              </div>
-            </CloudFadeIn>
-          </div>
-
-          <div className="flex flex-row justify-center  ">
-            <CloudFadeIn>
-              <div className="relative floating-slower transition-all cloud-fade-in-animation">
-                <SmallCloud className="scale-[1.35] xl:scale-[1.9]" />
-                <div className="absolute top-0 h-full w-full flex flex-row justify-center items-center">
-                  <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
-                    Active Learner
-                  </h3>
-                </div>
-              </div>
-            </CloudFadeIn>
-          </div>
-          <div className="flex md:flex-row flex-col-reverse justify-center md:justify-between items-center gap-12 md:gap-0 pt-4">
-            <CloudFadeIn>
-              <div className="relative floating-slowest cloud-fade-in-animation">
-                <SmallCloud className="scale-[1] xl:scale-[1.2]" />
-                <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
-                  <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
-                    ...
-                  </h3>
-                </div>
-              </div>
-            </CloudFadeIn>
-            <CloudFadeIn>
-              <div className="relative floating-slow cloud-fade-in-animation md:mr-28">
-                <SmallCloud className="scale-[1.2] xl:scale-[1.6]" />
-                <div className="absolute top-0 h-full w-full  flex flex-row justify-center items-center">
-                  <h3 className={`${zilla_bold.className} z-10 text-3xl `}>
-                    Creative
-                  </h3>
-                </div>
-              </div>
-            </CloudFadeIn>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+*/

@@ -14,7 +14,7 @@ import Clock from "@/components/Clock";
 const zilla = Zilla_Slab({ subsets: ["latin"], weight: "700" });
 export default function AboutSection() {
   return (
-    <section className="relative xl:min-h-screen min-h-screen w-screen bg-[url('../../public/assets/new_bg_design_about.png')] bg-center bg-repeat-y bg-cover ">
+    <section className="relative xl:min-h-screen min-h-screen w-screen">
       <div className="w-screen overflow-x-hidden absolute ">
         <svg
           className=""
@@ -28,7 +28,7 @@ export default function AboutSection() {
           />
         </svg>
       </div>
-      <div className="h-full w-full bg-black bg-opacity-70 text-white flex flex-col justify-center items-center ">
+      <div className="h-full w-full  text-white flex flex-col justify-center items-center ">
         <div className="flex flex-col justify-center items-center gap-6">
           <h3 className={`${zilla.className} text-3xl`}>
             But now the time has come...

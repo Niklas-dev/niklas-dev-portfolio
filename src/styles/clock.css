@@ -1,6 +1,4 @@
 .clock {
-  width: 400px;
-  height: 400px;
   border: 2px solid black;
   border-radius: 50%;
   background-color: #242424;
@@ -13,9 +11,9 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 8px;
-  height: 8px;
-  background-color: #6d6d6d;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(155, 155, 155);
   border-radius: 50%;
 }
 
@@ -25,18 +23,8 @@
   left: 50%;
   top: 10px;
   transform: translateX(-50%);
-  width: 4px;
+  width: 3px;
   height: 45%;
   border-radius: 10px 10px 0px 0px;
-  background-image: linear-gradient(to top, #db36a4, #f7ff00);
-}
-
-.clock-mark {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform-origin: 50% 100%;
-  width: 2px;
-  height: 10%;
-  background-color: #000;
+  background-color: rgb(155, 155, 155);
 }

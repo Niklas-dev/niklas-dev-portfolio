@@ -34,10 +34,9 @@ export default function NavBar() {
   };
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShow(true);
-    }, 6000);
+    setShow(true);
     navNarRef.current?.classList.add("shownavbar");
+
     onScroll(() => {
       console.log("The user has started scrolling");
       navNarRef.current?.classList.remove("shownavbar");
@@ -49,7 +48,7 @@ export default function NavBar() {
       navNarRef.current?.classList.add("shownavbar");
     });
 
-    return () => clearTimeout(timer);
+    return () => {};
   }, []);
 
   return (
